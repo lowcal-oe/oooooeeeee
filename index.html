@@ -16,16 +16,46 @@
             padding: 32px;
         }
 
+        .light {
+            background: #fff;
+            padding: 32px;
+        }
+
         .color-wh {
             color: #fff;
         }
 
-        .btn {
+        .color- {
+            color: #000;
+        }
+
+        .btn-light {
             cursor: pointer;
             transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
         }
 
-        .btn {
+        .btn-light {
+            background: #EA603F;
+            border: 1px solid #EA603F;
+            border-radius: 8px;
+            color: #fff;
+            display: block;
+            font-weight: bold;
+            max-width: 224px;
+            text-align: center;
+        }
+
+        .btn-light:hover {
+            background: #EA603F;
+            opacity: 0.8;
+        }
+
+        .btn-dark {
+            cursor: pointer;
+            transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+        }
+
+        .btn-dark {
             background: none;
             border: 1px solid #FFFFFF;
             border-radius: 8px;
@@ -36,7 +66,7 @@
             text-align: center;
         }
 
-        .btn:hover {
+        .btn-dark:hover {
             background: #EA603F;
             color: #FFFFFF;
             border: 1px solid #EA603F;
@@ -45,9 +75,16 @@
 </head>
 
 <body>
+    <h1>ホバーアクションについて</h1>
+    <div class="light">
+        <p class="color-bk">ボタン（白背景箇所）</p>
+        <div class="btn-light">
+            <p>詳細を見る</p>
+        </div>
+    </div>
     <div class="dark">
-        <p class="color-wh">ボタン（画像など暗い背景箇所）は白枠線</p>
-        <div class="btn">
+        <p class="color-wh">ボタン（画像など暗い背景箇所）</p>
+        <div class="btn-dark">
             <p>詳細を見る</p>
         </div>
     </div>
